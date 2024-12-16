@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shut the Box</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="game.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Shut the Box</h1>
+    </header>
+    <main>
+        <section class="players">
+            <label for="player1">Player 1 Name:</label>
+            <input type="text" id="player1">
+            <label for="player2">Player 2 Name:</label>
+            <input type="text" id="player2">
+            <button id="start">Start Game</button>
+        </section>
+        <section class="game-board" style="display: none;">
+            <div class="dice">
+                <img id="dice1" src="dice1Img" alt="Dice 1">
+                <img id="dice2" src="dice2Img" alt="Dice 2">
+            </div>
+            <div class="buttons">
+                <button id="roll" disabled>Roll Dice</button>
+                <button id="individual" disabled>Use Individual</button>
+                <button id="sum" disabled>Use Sum</button>
+                <button id="endTurn" disabled>End Turn</button>
+            </div>
+            <div class="boxes">
+                <!-- Boxes numbered 1 through 9 -->
+                <div id="box1" class="box">1</div>
+                <div id="box2" class="box">2</div>
+                <div id="box3" class="box">3</div>
+                <div id="box4" class="box">4</div>
+                <div id="box5" class="box">5</div>
+                <div id="box6" class="box">6</div>
+                <div id="box7" class="box">7</div>
+                <div id="box8" class="box">8</div>
+                <div id="box9" class="box">9</div>
+            </div>
+        </section>
+        <section class="scorecard">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Round</th>
+                        <th id="p1name">Player 1</th>
+                        <th id="p2name">Player 2</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+        <section class="winner" style="display: none;">
+            <h2>Winner</h2>
+            <p id="winnerMessage"></p>
+            <button id="playAgain">Play Again</button>
+        </section>
+    </main>
+</body>
+</html>

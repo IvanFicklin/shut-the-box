@@ -1,0 +1,113 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    margin: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.players {
+    margin: 20px;
+}
+
+.players label, .players input {
+    margin-right: 10px;
+}
+
+.game-board {
+    margin-top: 20px;
+}
+
+.dice img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.buttons button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.buttons button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.box.shut {
+    background-color: #333;
+    color: #fff;
+    border-color: red;
+}
+
+.scorecard {
+    margin-top: 30px;
+}
+
+.scorecard table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.scorecard th, .scorecard td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.scorecard th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.winner {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.winner h2 {
+    color: #4CAF50;
+}
+
+#winnerMessage {
+    font-size: 1.2rem;
+}
+
+#winner button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+}
